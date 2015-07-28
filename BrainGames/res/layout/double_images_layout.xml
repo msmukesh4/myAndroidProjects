@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/original_image"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/flipped_image"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:src="@drawable/blank_image" />
+
+</LinearLayout>

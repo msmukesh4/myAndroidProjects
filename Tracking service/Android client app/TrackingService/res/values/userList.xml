@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string-array name="Friends">
+        <item name="raj">Raj</item>
+        <item name="sachin">Sachin</item>
+        <item name="virat">Virat</item>
+        <item name="rahul">Rahul</item>
+    </string-array>
+    
+</resources>

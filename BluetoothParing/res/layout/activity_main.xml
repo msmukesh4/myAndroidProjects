@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text=" :: Bluetooth Options ::"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/bDisable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bEnable"
+        android:layout_alignBottom="@+id/bEnable"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginRight="25dp"
+        android:text="Disbale" />
+
+    <Button
+        android:id="@+id/bDiscoverable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bEnable"
+        android:layout_below="@+id/bEnable"
+        android:layout_marginTop="14dp"
+        android:text="Discoverable" />
+
+    <TextView
+        android:id="@+id/enableMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bDiscoverable"
+        android:layout_below="@+id/bEnable"
+        android:text="message" />
+
+    <TextView
+        android:id="@+id/discoverableMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bDiscoverable"
+        android:layout_below="@+id/bDiscoverable"
+        android:text="message discovey" />
+
+    <Button
+        android:id="@+id/paired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/discoverableMessage"
+        android:layout_below="@+id/discoverableMessage"
+        android:text="Get Paired List" />
+
+    <Button
+        android:id="@+id/searchDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/paired"
+        android:layout_below="@+id/paired"
+        android:text="Search Devices" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/searchDevices" >
+    </ListView>
+
+    <Button
+        android:id="@+id/bEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="Enable" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/searchDevices"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/searchDevices"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/paired"
+        android:layout_alignBottom="@+id/paired"
+        android:layout_alignLeft="@+id/textView2" />
+
+</RelativeLayout>

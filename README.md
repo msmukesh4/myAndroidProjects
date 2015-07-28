@@ -1,3 +1,4 @@
 # myAndroidProjects
-These are my android projects created so far
-,lw,a,d,wa,dw,ad,wa
+These are all the projects that i have created 
+during learning android projramming.
+
